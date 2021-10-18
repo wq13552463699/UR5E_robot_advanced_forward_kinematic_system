@@ -1,6 +1,6 @@
 # UR5E_robot_advanced_forward_kinematic_system
 'Forward_kin_v1.py' in this repository contains the advanced forward kinematic computing system of the UR5E robot. I think no one has done this kind of job before, hoping to help those in need.\
-The principle is based on coordinate transformation and matrix calculation. By entering the angle of the joint angles of UR5e, the detailed coordinates of up to 48 points around the robot arm can be calculated, as shown by the yellow dots in the figure below. 
+The principle is based on coordinate transformation and matrix calculation. By entering the angle of the joint angles of UR5e, the detailed coordinates of up to 48 points around the robot arm can be calculated, as shown by the yellow dots in the figure below. \
 <img src="https://github.com/wq13552463699/UR5E_robot_advanced_forward_kinematic_system/blob/main/Pic/Picture1.jpg" height="500" width="200" >
 <img src="https://github.com/wq13552463699/UR5E_robot_advanced_forward_kinematic_system/blob/main/Pic/Picture2.jpg" height="500" width="200" >\
 These point coordinates can basically describe the position information of the key parts of the robot during the movement.
