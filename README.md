@@ -15,7 +15,7 @@ https://www.youtube.com/watch?v=7QEbURsEXJI
 The robot can reset itself everytime when it touched the boundary.
 
 ## Different from this system and in-built UR5E safety boundary
-the built-in safety boundary will force the robot to stop when it is touched, and the robot will not be able to work again without manual recovery. The existence of this system allows the robot to perform specific human instructions (such as callback or reset) before being forced to stop. Another difference is that according to my test, the built-in safety boundary of UR5E is invalid for the Wrist joint of the robot, which means that the Wrist joint can freely enter and exit the safety boundary, which is a big safety hazard.\
+the built-in safety boundary will force the robot to stop when it is touched, and the robot will not be able to work again without manual recovery. The existence of this system allows the robot to perform specific human instructions (such as callback or reset) before being forced to stop. Another difference is that according to my test, the built-in safety boundary of UR5E is invalid for the Wrist joint of the robot, which means that the Wrist joint can freely enter and exit the safety boundary, which is a big safety hazard.
 
 ## Others
 I have used this system for reinforcement learning training. I set a safety boundary as the final protection in the built-in settings of UR5e, and set a second sub-safety boundary within the safety boundary. The area between these two boundaries is the buffer, as long as any point on the robot body entering the buffer, robot will be reset.\
