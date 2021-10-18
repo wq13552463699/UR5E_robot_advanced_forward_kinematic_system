@@ -2,7 +2,7 @@
 """
 Created on Wed Aug  4 16:12:19 2021
 
-@author: 14488
+@author: Qiang Wang
 """
 import numpy as np
 from math import sin,cos,pi
@@ -35,10 +35,11 @@ r_s6 = 0.075 / 2
 
 ############################# Functional part ############################
 class UR5e_kin():
+    # The output: A list contains 24/48 different Cartesian coordinates like [0,0,1]
     def __init__(self,
-                 mode=24,
-                 global_init = [-pi/2,-pi/2,0,-pi/2,0,0],
-                 rela_tip_pos = 0,
+                 mode=24, # Output the coodinate of 24 or 48 points
+                 global_init = [-pi/2,-pi/2,0,-pi/2,0,0], # Init joint angles
+                 rela_tip_pos = 0, # The relative end effector distance relative to the connection postion.
                  ):
         self.rela_tip_pos = rela_tip_pos
         
